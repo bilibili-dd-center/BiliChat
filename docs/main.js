@@ -1382,7 +1382,7 @@ var environment = {
     official: false,
     production: false,
     api_server: 'http://127.0.0.1:5000/api',
-    default_avatar: 'http://static.hdslb.com/images/member/noface.gif'
+    default_avatar: 'https://static.hdslb.com/images/member/noface.gif'
 };
 /*
  * For easier debugging in development mode, you can import the following file
