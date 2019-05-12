@@ -7,11 +7,11 @@ import { environment } from '../environments/environment';
 import { IndexLocalComponent } from './index-local/index-local.component';
 
 const routes: Routes = [
-  { path: 'alpha/:id', component: AlphaComponent},
-  { path: 'viewer/:id', component: ViewerComponent},
-  { path: 'official', component: IndexComponent},
-  { path: '', component: environment.official?IndexComponent:IndexLocalComponent},
-  { path: '**', redirectTo: '', pathMatch: 'full'}
+  { path: '**', component: AlphaComponent},
+  // { path: 'viewer/:id', component: ViewerComponent},
+  // { path: 'official', component: IndexComponent},
+  // { path: '', component: environment.official?IndexComponent:IndexLocalComponent},
+  // { path: '**', redirectTo: '', pathMatch: 'full'}
 ];
 
 @NgModule({

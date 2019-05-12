@@ -27,8 +27,8 @@ export class AlphaComponent implements OnInit {
     private http: HttpClient) { }
 
   ngOnInit() {
-    this.currentRoomId = this.route.snapshot.params['id'];
-    this.title.setTitle('直播间' + this.currentRoomId);
+    // this.currentRoomId = this.route.snapshot.params['id'];
+    // this.title.setTitle('直播间' + this.currentRoomId);
 
     if (this.route.snapshot.queryParamMap.has('loadAvatar')) {
       this.proc.loadAvatar = this.route.snapshot.queryParamMap.get('loadAvatar').toLowerCase() === 'true';
@@ -54,6 +54,8 @@ export class AlphaComponent implements OnInit {
     if (this.route.snapshot.queryParamMap.has('pure')) {
       this.proc.pure = this.route.snapshot.queryParamMap.get('pure').toLowerCase() === 'true';
     }
+    this.currentRoomId = Number(this.route.snapshot.queryParamMap.get('room'))
+    this.title.setTitle('直播间' + this.currentRoomId);
   }
 
   onload() {
