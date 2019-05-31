@@ -10,6 +10,15 @@ MIT
 @angular/router
 MIT
 
+@nguniversal/express-engine
+MIT
+
+@ngx-translate/core
+MIT
+
+@ngx-translate/http-loader
+MIT
+
 material-design-lite
 Apache-2.0
 
