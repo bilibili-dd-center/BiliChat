@@ -1,3 +1,5 @@
+提示: 这是用于<https://vtbs.moe> iframe的修改版, [diff](https://github.com/3Shain/BiliChat/compare/master...bilibili-dd-center:master)
+
 # <img src="https://raw.githubusercontent.com/3Shain/BiliChat/master/src/favicon.ico" width="48" style="vertical-align:text-bottom"> BILICHAT 
 ![fubuki!](https://raw.githubusercontent.com/3Shain/BiliChat/master/doc/fubuki.jpg)
 > 第一次就实装在小狐狸的b站限定直播我能吹一年(虽然中途因压力过大服务器被干掉两次，果然还是膨胀了)
@@ -48,12 +50,15 @@ bilichat
 ## 🍥URL参数  
 在url后面添加query参数可以自定义效果  
 * `loadAvatar` true/false 控制是否从api获取头像  默认true
+  
     >这个设置不等于不显示头像，而是只显示默认头像。若需要去掉头像可以在css中设置。  
 * `levelFilter` 一个数字 用户等级(UL)低于该值的弹幕不会被显示  默认0
 * `hideGiftDanmaku` true/false 控制是否隐藏礼物抽奖弹幕(节奏风暴/摩天楼/小电视的效果) 默认true  
 * `showGift` true/false 控制是否展示礼物信息 默认true  
+  
     > 价值与颜色对应信息如果需要自定义，请参考本地配置文件。
 * `wordFilter` 以半角逗号分隔的字符串 所有包含关键词的弹幕都会被屏蔽  
+  
     > 有一部分词语已经被默认屏蔽，若需解除请自行修改。
 * `giftOnly` 只显示礼物信息 默认false
 * `groupSimilar` 堆叠同类弹幕 默认true
